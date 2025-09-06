@@ -1,0 +1,44 @@
+body {
+  background-color: #EEc8cf;
+  margin: 0;
+}
+h1 {
+  color: #82414d;
+}
+h2 {
+  color: #82414d;
+}
+h3 {
+  color: #82414d;
+}
+p {
+  color: black;
+}
+
+.navbar {
+  background-color: #302424;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #634a45;
+  color: whitesmoke;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
