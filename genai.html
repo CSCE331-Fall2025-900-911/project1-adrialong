@@ -1,26 +1,101 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>Gen AI</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" href="style-a.css">
+  <title>Gen AI</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link id="styleASheet" rel="stylesheet" href="style-a.css">
 </head>
 
-
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Technical Portfolio</a>
-        <a href="genai.html">Personal</a>
-        <a href="qualifications.html">Qualifications</a>
-        <a href="service.html">Service</a>
-    </div>
-  <center>
+  <div class="navbar">
+    <a href="index.html" class="navround">Home</a>
+    <a href="portfolio.html" class="navround">Technical Portfolio</a>
+    <a href="genai.html" class="navround">Personal</a>
+    <a href="qualifications.html" class="navround">Qualifications</a>
+    <a href="service.html" class="navround">Service</a>
+    <button type="button" onclick="toggleStyleSheet()" class="styround">Style Change</button>
+    <script src='functions.js'></script>
+  </div>
 
-    <h1>Fun Facts About Me</h1>
-    <h1>Gen AI Page</h1>
+  <main class="page">
+    <h1 class="page-title">Fun Facts About Me</h1>
 
-  </center>
+    <!-- Section 1: Hobbies -->
+    <section class="fact-row">
+      <div class="fact-copy">
+        <h2 class="factheader">Hobbies</h2>
+        <ul class="bullets">
+          <li>Traveling</li>
+          <li>Going to concerts</li>
+          <li>Watching horror movies</li>
+          <li>Dancing</li>
+        </ul>
+      </div>
+      <div class="fact-media">
+        <figure class="photo">
+          <a href="https://open.spotify.com/artist/5ti5FPHgtaSf15KcUisZMt?si=1Al4WrUgRhGTjc8LbGBRMg" target="_blank" rel="noopener noreferrer">
+            <img src="concertimg.jpg" alt="maye concert I went to" width="400" height="400"/>
+          </a>
+          <figcaption>Image is from the maye concert I attended</figcaption>
+          <figcaption>Click on it to go to her Spotify page</figcaption>
+        </figure>
+      </div>
+    </section>
 
+    <!-- Section 2: My Story -->
+    <section class="fact-row">
+      <div class="fact-copy">
+        <h2 class="factheader">My Story</h2>
+        <ul class="bullets">
+          <li>I'm the only child in my family. My parents were both born in Mexico and I was born in California.</li>
+          <li>I had my quincenera in Mexico so that all my family members were able to go.</li>
+          <li>I did online school from Kindergarten up to 8th grade, excluding 2nd grade.</li>
+          <li>I have a dog named Bella and she's a pocket bully</li>
+        </ul>
+      </div>
+      <div class="fact-media">
+        <figure class="photo"><img src="myfamilyimg.jpg" alt="Image of my family and dog" width="400" height="400"/></figure>
+      </div>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section class="fact-row">
+      <div class="fact-copy">
+        <h2 class="factheader">My Favorite Media</h2>
+        <ul class="bullets">
+          <li>Movie: 
+            <a href="https://childsplay.fandom.com/wiki/Bride_of_Chucky" target="_blank" rel="noopener">Bride of Chucky</a> (1998, Horror/Comedy)</li>
+          <li>Music: I like all types of music, but as of recently I've been listening to a lot of
+            <a href="https://open.spotify.com/artist/2Tglaf8nvDzwSQnpSrjLHP?si=c5UVQTDtQue7atZnfYDGiQ" target="_blank" rel="noopener">Cuco</a>,
+            <a href="https://open.spotify.com/artist/57vWImR43h4CaDao012Ofp?si=QPVZvGgoS2OjKDeQauCpgA" target="_blank" rel="noopener">Steve Lacy</a>,
+            <a href="https://open.spotify.com/artist/3AA28KZvwAUcZuOKwyblJQ?si=1P_gFU1yS4y_-aeAQ9IfBg" target="_blank" rel="noopener">Gorillaz</a>, and
+            <a href="https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi?si=kLfltW6LT1m5rjoak7cfbQ" target="_blank" rel="noopener">Daft Punk</a>.
+          </li>
+          <li>Video Game:
+            <a href="https://metalgear.fandom.com/wiki/Metal_Gear_series" target="_blank" rel="noopener">Metal Gear</a>
+            (Action-Adventure),
+            <a href="https://silenthill.fandom.com/wiki/Silent_Hill_(video_game)" target="_blank" rel="noopener">Silent Hill</a>
+            (Survival Horror), and
+            <a href="https://guitarhero.fandom.com/wiki/Guitar_Hero" target="_blank" rel="noopener">Guitar Hero</a>
+            (Rhythm)
+          </li>
+
+        </ul>
+      </div>
+      <div class="fact-media">
+        <figure class="photo"><img src="mediaimg.jpg" alt="Images of my favorite medias" width="400" height="400"/></figure>
+      </div>
+    </section>
+
+    <section class="ai-prompt">
+      <h2 class="factheader">Prompt Used</h2>
+      <p class="ai-prompt-note">This is the exact prompt I used to generate this page.</p>
+      <textarea id="ai-prompt" class="prompt-box" readonly>
+    "Create a personal 'Fun Facts About Me' page with a two-column layout: left side has Hobbies, My Story, and Favorite Media with bullet points; right side shows matching images with rounded
+    corners and captions. Use my color palette (#EEC8CF background, #82414D accents)…"
+      </textarea>
+    </section>
+
+  </main>
 </body>
 </html>

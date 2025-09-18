@@ -3,16 +3,18 @@
 <head>
 <title>Portfolio</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" href="style-a.css">
+<link id="styleASheet" rel="stylesheet" href="style-a.css">
 </head>
 
 <body>
     <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Technical Portfolio</a>
-        <a href="genai.html">Personal</a>
-        <a href="qualifications.html">Qualifications</a>
-        <a href="service.html">Service</a>
+        <a href="index.html" class="navround">Home</a>
+        <a href="portfolio.html" class="navround">Technical Portfolio</a>
+        <a href="genai.html" class="navround">Personal</a>
+        <a href="qualifications.html" class="navround">Qualifications</a>
+        <a href="service.html" class="navround">Service</a>
+        <button type="button" onclick="toggleStyleSheet()" class="styround">Style Change</button>
+        <script src='functions.js'></script>
     </div>
   <center>
 
@@ -24,9 +26,11 @@
         The customer view simulates a vending-style experience with a real-time inventory updates, while the admin panel lets managers restock items, track sales, and reset statistics when needed.
         The program also includes persistent data storage, so sales are saved even after closing and reopening.
         This project strengthened my skills in JavaFX, OOP design, and GUI styling.</p>
+        <div class="foodtruckimg">
         <img src="grilledcheesefoodtruckpic1.png" alt="Project main view" width="700", height="403">
         <br>
         <img src="grilledcheesefoodtruckpic2.png" alt="Project admin panel" width="700", height="460">
+        </div>
         <br>
         <br>
         <a href="https://github.com/adria-long/Grilled_Cheese_Food_Truck" class="links"><b>Grilled Cheese Food Truck Github</b></a>

@@ -3,52 +3,71 @@
 <head>
 <title>Howdy!</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" href="style-a.css">
+<link id="styleASheet" rel="stylesheet" href="style-a.css">
 </head>
 
 <body>
   <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="portfolio.html">Technical Portfolio</a>
-    <a href="genai.html">Personal</a>
-    <a href="qualifications.html">Qualifications</a>
-    <a href="service.html">Service</a>
+    
+    <a href="index.html" class="navround">Home</a>
+    <a href="portfolio.html" class="navround">Technical Portfolio</a>
+    <a href="genai.html" class="navround">Personal</a>
+    <a href="qualifications.html" class="navround">Qualifications</a>
+    <a href="service.html" class="navround">Service</a>
+    <button type="button" onclick="toggleStyleSheet()" class="styround">Style Change</button>
+    <script src='functions.js'></script>
+
   </div>
   <center>
-
-    <h1>Howdy!</h1>
-    <h1>I'm Adriana Long!</h1>
-    <img src="professionalimage.jpg" " alt="Professional Image" width="200", height="250">
-    <p>Computer Science Major & Business Minor at Texas A&M</p>
+    <div class="profile">
+      <div>
+        <h1>Howdy!</h1>
+        <h1>I'm Adriana Long!</h1>
+      </div> 
+      <div>
+        <img src="professionalimage.jpg" " alt="Professional Image" width="200", height="250">
+        <p>Computer Science Major & Business Minor at Texas A&M</p>
+      </div>
+      
+    </div>
     <div class="row">
       <div class="column">
-        <h2 class="homeh2">About Me</h2>
-        <p class="par">Howdy! My name is Adriana Long, and I'm a computer science student minoring in business at Texas A&M University, class of '27. 
+        <div class="intro-container">
+          <h2 class="homeh2">About Me</h2>
+          <p class="par">Howdy! My name is Adriana Long, and I'm a computer science student minoring in business at Texas A&M University, class of '27. 
           I've been fascinated by computers and programming for as long as I can remember. 
           My dad played a big role in sparking that interest; he was always exploring new technology, tinkering with code, and experimenting with robotics. 
           Whenever he worked on a project, I'd join in and learn alongside him, which quickly grew into my own passion for computer science. 
           Over the years, I've built up experience with C++, Python, HTML, CSS, JavaScript, and Java, and I enjoy applying those skills in projects that challenge me to problem-solve and be creative.</p>
-        <h2 class="homeh2"><br>Professional Interests</h2>
-        <p class="par">The areas of computer science I'm most interested in are automation and software. 
+        </div>
+        <div class="intro-container">
+          <h2 class="homeh2"><br>Professional Interests</h2>
+          <p class="par">The areas of computer science I'm most interested in are automation and software. 
           During an internship, I worked in data analytics, where I used automation to push information into the business management system, which cut out most human error. 
           That experience showed me how powerful automation can be and made me realize it's the area I want to focus on. 
           One of the tools I enjoyed working with was Power Automate because it let me take an Excel file and automatically process and upload the data into the system. 
           Moving forward, I want to keep exploring tools and projects that streamline processes and make work more efficient.</p>
+        </div>
+        
       </div>
       <div class="column">
-        <h2 class="homeh2">Goals and Values</h2>
-        <p class="par">Some of my short-term goals are to gain more internship experience at different companies so I can explore various areas of computer science, and to create small projects that deepen my skills while contributing to real-world issues.
+        <div class="intro-container">
+          <h2 class="homeh2">Goals and Values</h2>
+          <p class="par">Some of my short-term goals are to gain more internship experience at different companies so I can explore various areas of computer science, and to create small projects that deepen my skills while contributing to real-world issues.
           A long-term goal I have is to go to law school and become a patent lawyer after finishing my bachelor's in computer science.
           Some of the values that guide me are community, communication, determination, and efficiency. 
           I value being part of a strong community because it creates opportunities, connections, and support. 
           Communication is also important to me; I like being direct and clear about what needs to be done, and I appreciate the same from others. 
           Determination keeps me motivated when challenges come up, and efficiency drives me to find better ways of solving problems. 
           Together, these values shape how I approach both my education and my future career.</p>
-        <h2 class="homeh2"><br>Life Outside Code</h2>
-        <p class="par">Outside of coding, I like to travel, listen to music, watch movies, and get involved in clubs such as AWICS (Aggie Women in Computer Science) and MAES (Latinos in Science and Engineering). 
+        </div>
+        <div class="intro-container">
+          <h2 class="homeh2"><br>Life Outside Code</h2>
+          <p class="par">Outside of coding, I like to travel, listen to music, watch movies, and get involved in clubs such as AWICS (Aggie Women in Computer Science) and MAES (Latinos in Science and Engineering). 
           I also enjoy spending time with my culture. 
           Being Mexican is an important part of who I am, so I love going to bailes, eating tamales and pozole, and watching telenovelas. 
-          These things connect me to my roots and give me balance outside of academics, while also giving me spaces to relax, have fun, and connect with others.</p>
+          These things connect me to my roots and give me balance outside of academics, while also giving me spaces to relax, have fun, and connect with others.</p></div>
+        
       </div>
     </div>
 
